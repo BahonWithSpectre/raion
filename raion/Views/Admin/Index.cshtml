@@ -1,0 +1,25 @@
+﻿@model List<raion.Models.DbModels.User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Список Пользователей</h1>
+
+
+<div>
+    <table class="table table-bordered">
+        <thead>
+
+        </thead>
+        <tbody>
+            @foreach (var v in Model)
+            {
+                <tr>
+                <td>@v.Email</td>
+                <td>@v.FirstName @v.LastName</td>
+                <td>@v.RegisterDate.ToString(format: "dd/MM/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
