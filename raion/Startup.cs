@@ -16,7 +16,7 @@ namespace raion
 {
     public class Startup
     {
-        private string constr = "Server=(localdb)\\mssqllocaldb;Database=gooddb;Trusted_Connection=True;";
+        private string constr = "Data Source=SQL5074.site4now.net;Initial Catalog=db_a7bff7_raion;User Id=db_a7bff7_raion_admin;Password=12357raion";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
