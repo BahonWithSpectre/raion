@@ -15,6 +15,7 @@ namespace raion.Models.DbModels
             
         }
 
+        public DbSet<Message> Messages { get; set; }
 
     }
 }

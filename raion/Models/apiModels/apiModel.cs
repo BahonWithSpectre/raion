@@ -29,6 +29,7 @@ namespace raion.Models.apiModels
 
     public class Error
     {
+        public string id { get; set; }
         public string error { get; set; }
     }
 }

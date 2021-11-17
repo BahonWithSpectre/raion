@@ -36,7 +36,7 @@ namespace raion.Controllers.Rest_Api
                 if (result.Succeeded)
                 {
                     var user = await um.FindByNameAsync(model.login);
-                    return new JsonResult(user.Id);
+                    return new JsonResult(new Error { id = user.Id });
                 }
             }
             return new JsonResult(new Error { error = "Данные отсутствуют" });
@@ -55,7 +55,7 @@ namespace raion.Controllers.Rest_Api
 
                 if (result.Succeeded)
                 {
-                    return new JsonResult(user.Id);
+                    return new JsonResult(new Error { id = user.Id });
                 }
             }
             return new JsonResult(new Error { error = "Данные отсутствуют" });
